@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: #004d4d;color:white;}
+footer {background: #004d4d;color:white;}
+.nav {background:#cccccc;}
+article {background:  #e6e6e6;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+  <h1>Sude Yazgan</h1>
+</header>
+
+<nav class="nav">
+  <p>Coding</p>
+  <p>Artworks</p>
+  <p>Favorite websites</p>
+</nav>
+
+<article class="article">
+  <h1>About Me</h1>
+  <p>I enjoy being around my family and friends. Because I'm more of an extrovert, I'm always making new friends and I love talking to people. I like to draw or paint in my free time. I love to travel and try new things along the way. </p>
+  <p><strong>Fun Fact: I've been playing piano for 11 years.</strong></p>
+</article>
+
+<footer> Portfolio 2017</footer>
+</div>
+
+</body>
+</html>
